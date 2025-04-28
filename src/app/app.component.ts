@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './header.component';
+import { CoursesComponent } from './courses.component';
+import { CourseComponent } from './course/course.component';
+import { CourseService } from './courses.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent],
+  imports: [ CoursesComponent, CourseComponent ],
+  providers:[CourseService],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  // styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'first-angular-app';
+  title = 'first-angular-app ';
 }
