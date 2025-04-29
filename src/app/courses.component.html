@@ -1,4 +1,17 @@
-<h1>Courses</h1>
+<div (click)="divClicked()">
+<button class="btn btn-primary" [class.klsdfjsljfsljactive]="isActive" [style.backgroundColor]="xyz" (click)="onClick($event)">Save</button>
+</div>
+
+
+<!-- <input #lsjflkdsfjdslfjds type="text" (change)="onpressingEnter($event)"> -->
+
+<!-- <input type="text" [value]="email" (keyup.enter)="entered($event)"> -->
+<input type="text" [(ngModel)]="email" (keyup.enter)="enteredd()">
+
+<!-- <input #lsjflkdsfjdslfjds type="text" (change)="onpressingEnter(lsjflkdsfjdslfjds.value)"> -->
+
+
+<!-- <h1>Courses</h1>
 <p>{{ getTitle()}}</p>
 <ul>
     <li *ngFor="let item of courses">
@@ -6,4 +19,4 @@
     </li>
 </ul>
 
-<img [src]="imageUrl" alt="">v
+<img [src]="imageUrl" alt=""> -->
